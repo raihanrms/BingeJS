@@ -6,5 +6,6 @@
 |Folder|Description|File|
 |:---:|:---:|:---:|
 |Basics|Recalling all the basics|[basics.js](https://github.com/raihanrms/BingeJS/blob/main/Basics/basics.js)|
+---
 
-> Contributors: @raihanrms
+Contributors: @raihanrms
