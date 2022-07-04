@@ -3,7 +3,6 @@
 
 > Might add wakatime to keep track.
 
-|Folder|Description|
-|:---:|:---:|
-|Basics|Recalling all the basics|
-|:---:|:---:|
+|Folder|Description|File|
+|:---:|:---:|:---:|
+|Basics|Recalling all the basics|basics.js|
