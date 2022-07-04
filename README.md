@@ -5,4 +5,4 @@
 
 |Folder|Description|File|
 |:---:|:---:|:---:|
-|Basics|Recalling all the basics|basics.js|
+|Basics|Recalling all the basics|[basics.js](../BingeJS/Basics/basics.js)|
