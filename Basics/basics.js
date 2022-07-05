@@ -13,8 +13,9 @@ sentence1 = "Hello World, I am " + name + " and I am " + age + " years old.";
 console.log(sentence1);
 
 // operators
-Eating = prompt("What do you want to eat: ")
-food = 20
-tipPerc = 0.2
-tipAmount = food * tipPerc
-console.log("You should tip $" + tipAmount + " for your meal.");
+const prompt = require("prompt-sync")();
+
+var food = prompt('How much was the food: ');
+var tipPercent = prompt('What is the tip percentage: ') / 100;
+tipAmount = food * tipPercent
+console.log("The tip amount is $" + tipAmount);

@@ -9,3 +9,5 @@ index.html
 replit.nix
 style.css
 playground.js
+node_modules
+package-lock.json
