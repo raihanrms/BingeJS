@@ -15,7 +15,14 @@ console.log(sentence1);
 // operators
 const prompt = require("prompt-sync")();
 
-var food = prompt('How much was the food: ');
-var tipPercent = prompt('What is the tip percentage: ') / 100;
+// wrap in number to avoid typecasting
+var food = Number(prompt('How much was the food: '));
+var tipPercent = Number(prompt('What is the tip percentage: ')) / 100;
 tipAmount = food * tipPercent
+total = food + tipAmount
+
 console.log("The tip amount is $" + tipAmount);
+console.log("The total is $" + total);
+
+// data types
+// Ctrl + I for emoji 
