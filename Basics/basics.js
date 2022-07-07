@@ -4,8 +4,8 @@
 console.log("Binge JavaScript...");
 
 // variables
-var name = "Raihan";
-var age = 26;
+let name = "Raihan";
+let age = 26;
 
 // console.log(name, age);
 
@@ -17,8 +17,8 @@ sentence1 = "Hello World, I am " + name + " and I am " + age + " years old.";
 const prompt = require("prompt-sync")();
 
 // wrap in number to avoid typecasting
-var food = Number(('How much was the food: '));
-var tipPercent = Number(('What is the tip percentage: ')) / 100;
+let food = Number(('How much was the food: '));
+let tipPercent = Number(('What is the tip percentage: ')) / 100;
 tipAmount = food * tipPercent;
 total = food + tipAmount
 
@@ -32,6 +32,24 @@ total = food + tipAmount
 
 
 // console out random number with Math.random() and Math.floor()
-var GenRandomNum = (Math.floor(Math.random() * 10));
-// console.log(GenRandomNum);
+let GenRandomNum = (Math.floor(Math.random() * 10));
+//console.log(GenRandomNum);
+
+// var - variable - can change (not recommended)
+// const - constant (cannot be changed)
+// let - let (value can be changed)
+
+// weather app (conditional)
+// if rain "Grab an umbrella ☂" else "Wear a sunglasses 🕶" 
+// conditional operator (if, else if, else)
+// ==, ===, !=, !==, >, <, >=, <=
+
+
+
+// let weather = prompt("How is it outside: ")
+// if (weather == "rain") {
+//     console.log("Grab an umbrella ☂");
+// } else {
+//     console.log("Wear a sunglasses 🕶");
+// }
 
