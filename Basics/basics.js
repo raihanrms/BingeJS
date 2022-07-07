@@ -17,9 +17,9 @@ sentence1 = "Hello World, I am " + name + " and I am " + age + " years old.";
 const prompt = require("prompt-sync")();
 
 // wrap in number to avoid typecasting
-var food = Number(prompt('How much was the food: '));
-var tipPercent = Number(prompt('What is the tip percentage: ')) / 100;
-tipAmount = food * tipPercent
+var food = Number(('How much was the food: '));
+var tipPercent = Number(('What is the tip percentage: ')) / 100;
+tipAmount = food * tipPercent;
 total = food + tipAmount
 
 // console.log("The tip amount is $" + tipAmount);
@@ -29,3 +29,9 @@ total = food + tipAmount
 // Ctrl + I for emoji 
 
 // Time: 24:18
+
+
+// console out random number with Math.random() and Math.floor()
+var GenRandomNum = (Math.floor(Math.random() * 10));
+// console.log(GenRandomNum);
+
