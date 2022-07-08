@@ -84,9 +84,9 @@ Add1 = Addition(1, 2)
 
 // tip calculator with function
 function TipCalc(food, tip){
-    tipPercent = Number(tip / 100);
-    tipAmount = food * tipPercent;
-    total = Addition(food, tipAmount);
+    const tipPercent = Number(tip / 100);
+    const tipAmount = food * tipPercent;
+    const total = Addition(food, tipAmount);
     return total;
 }
 
@@ -94,3 +94,6 @@ function TipCalc(food, tip){
 
 // ES6 - arrow functions
 // () => {}
+// sum with arrow function and implicit return
+const sumArrow = (a, b) => a + b
+// console.log(sumArrow(1, 2));
