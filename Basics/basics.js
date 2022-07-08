@@ -80,4 +80,17 @@ function Addition(num1, num2){
        
 }
 Add1 = Addition(1, 2)
-console.log(Add1)
+// console.log(Add1)
+
+// tip calculator with function
+function TipCalc(food, tip){
+    tipPercent = Number(tip / 100);
+    tipAmount = food * tipPercent;
+    total = Addition(food, tipAmount);
+    return total;
+}
+
+// console.log(TipCalc(300, 20))
+
+// ES6 - arrow functions
+// () => {}
