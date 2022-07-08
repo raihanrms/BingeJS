@@ -6,5 +6,5 @@
 |Folder|Description|File|
 |:---:|:---:|:---:|
 |Basics|Recalling all the basics|[basics.js](https://github.com/raihanrms/BingeJS/blob/main/Basics/basics.js)|
-|Excersice|Practicing functions|[function.js](https://github.com/raihanrms/BingeJS/blob/main/functions/excersice/script.js)|
+|Excersice|Practicing functions|[function.js](https://github.com/raihanrms/BingeJS/blob/main/functions/sum/exercise/script.js)|
 ---
