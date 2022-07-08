@@ -44,8 +44,6 @@ let GenRandomNum = (Math.floor(Math.random() * 10));
 // conditional operator (if, else if, else)
 // ==, ===, !=, !==, >, <, >=, <=
 
-
-
 // let weather = prompt("How is it outside: ")
 // if (weather == "rain") {
 //     console.log("Grab an umbrella ☂");
@@ -53,3 +51,12 @@ let GenRandomNum = (Math.floor(Math.random() * 10));
 //     console.log("Wear a sunglasses 🕶");
 // }
 
+// 40:00
+
+// functions - reusable code
+function AskName() {
+    let name = prompt("What is your name: ");
+    console.log("Hello " + name);
+}
+// calling the function
+AskName()
