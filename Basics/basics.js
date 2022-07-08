@@ -59,4 +59,25 @@ function AskName() {
     console.log("Hello " + name);
 }
 // calling the function
-AskName()
+// AskName()
+
+// dynamic function
+function AskNameInc(name) {
+    console.log("Hello " + name);
+}
+// AskNameInc("Raihan");
+
+// template literals - backtick (`)
+function StartFunc(name){
+    greet = `Hello ${name}`;
+    console.log(greet);
+}
+// StartFunc("Testing")
+
+// return - return a value from a function
+function Addition(num1, num2){
+    return num1 + num2
+       
+}
+Add1 = Addition(1, 2)
+console.log(Add1)
