@@ -1,32 +1,35 @@
 /* 
-
-  TODO: Write a function that subtracts two numbers
-  TODO: Write a function that divides two numbers.
-  TODO: Write a function that multiplies two numbers.
   *NOTE* be sure to handle dividing by zero 😉
   ES5 Syntax: function Add(){}
   ES6 Syntax (Arrow function): const add = () => {}
 */
 
-// TODO: Write a function that sums two numbers
+// Function that sums two numbers
 function add(){
-  
-  //Add function here
+  const sum = (a, b) => a + b
+  console.log(sum(10, 2))
 }
 
+// Function that subtracts two numbers
 function sub(){
-  //Subtract function here
+  const sub = (c, d) => c - d
+  console.log(sub(3, 2))
 }
 
+// Function that divides two numbers
 function div(){
-  //Divide function here
+  const div = (e, f) => e / f
+  console.log(div(4, 2))
 }
 
-function mul(){
-  //Multiply function here
+// Function that multiplies two numbers
+function mult(){
+  const mult = (g, h) => g * h
+  console.log(mult(4, 2))
 }
 
 console.log('hello from the SUM exercise')
-/* 
-  TODO: create a function that console logs the result of any of the above operations.
-*/
+add()
+sub()
+div()
+mult()
