@@ -1,5 +1,5 @@
 /* 
-  TODO: Write a function that sums two numbers
+
   TODO: Write a function that subtracts two numbers
   TODO: Write a function that divides two numbers.
   TODO: Write a function that multiplies two numbers.
@@ -8,7 +8,9 @@
   ES6 Syntax (Arrow function): const add = () => {}
 */
 
+// TODO: Write a function that sums two numbers
 function add(){
+  
   //Add function here
 }
 
