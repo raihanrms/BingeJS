@@ -1,7 +1,7 @@
 // Commented out to avoid cluttering the console
 
 // Console log
-console.log("Binge JavaScript...");
+console.log("Binge JavaScript...\nThe output is: ");
 
 // variables
 let name = "Raihan";
@@ -101,25 +101,25 @@ const sumArrow = (a, b) => a + b
 // Completed Function exercise (01:11:40)
 
 // Arrays
-const groceries = ["🍞", "🍎", "🍌", "🍐"]
+const fruits = ["🍞", "🍎", "🍌", "🍐", "🍒", "🍑", "🍍"]
 // 2nd index
-// console.log(groceries[1]);
+// console.log(fruits[1]);
 
 // array push
-groceries.push("🍓, 🍒, 🍑, 🍍")
-// console.log(groceries)
+fruits.push("🍓")
+// console.log(fruits)
 
 // array splice
-// console.log(groceries.slice(0, 2))
-// console.log(groceries.slice(2, 5))
-// console.log(groceries.slice(1, 4))
-// console.log(groceries.slice(3, 5))
+// console.log(fruits.slice(0, 2))
+// console.log(fruits.slice(2, 5))
+// console.log(fruits.slice(1, 4))
+// console.log(fruits.slice(3, 5))
 
 // array indexOf
-// console.log(groceries.indexOf("🍐"))
+// console.log(fruits.indexOf("🍐"))
 
 // array length
-// console.log(groceries.length)
+// console.log(fruits.length)
 
 // objects{}
 // key: value pairs
@@ -170,3 +170,25 @@ const introduction = (name, shirt, age, phone) => {
 // console.log(introduction("Raihan", "black"))
 // console.log(introduction("Qazi", "white", "26", "123-456-7890"))
 
+// for loops
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log(i, fruits[i])
+// }
+
+for (const fruit of fruits){
+    // console.log(fruit)
+}
+
+const doubleF = (num3) => {
+    let doubled = []
+    // let squared = []
+    for (const num of num3){
+        doubled.push(num * 2)
+        // squared.push(num ** 2)
+    }
+    return doubled
+    // return squared
+}
+// console.log(doubleF([1, 3, 6, 9, 12, 15]))
+
+// letter counter {time: 02:05:02}
