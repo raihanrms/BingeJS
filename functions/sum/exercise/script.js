@@ -29,7 +29,7 @@ function mult(){
 }
 
 console.log('hello from the SUM exercise')
-add()
-sub()
-div()
-mult()
+// add()
+// sub()
+// div()
+// mult()

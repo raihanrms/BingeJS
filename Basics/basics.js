@@ -84,10 +84,10 @@ Add1 = Addition(1, 2)
 
 // tip calculator with function
 function TipCalc(food, tip){
-    const tipPercent = Number(tip / 100);
-    const tipAmount = food * tipPercent;
-    const total = Addition(food, tipAmount);
-    return total;
+    const tipPercent = Number(tip / 100)
+    const tipAmount = food * tipPercent
+    const total = Addition(food, tipAmount)
+    return total
 }
 
 // console.log(TipCalc(300, 20))
@@ -97,3 +97,26 @@ function TipCalc(food, tip){
 // sum with arrow function and implicit return
 const sumArrow = (a, b) => a + b
 // console.log(sumArrow(1, 2));
+
+// Completed Function exercise (01:11:40)
+
+// Arrays
+const groceries = ["🍞", "🍎", "🍌", "🍐"]
+// 2nd index
+// console.log(groceries[1]);
+
+// array push
+groceries.push("🍓, 🍒, 🍑, 🍍")
+// console.log(groceries)
+
+// array splice
+// console.log(groceries.slice(0, 2))
+// console.log(groceries.slice(2, 5))
+// console.log(groceries.slice(1, 4))
+// console.log(groceries.slice(3, 5))
+
+// array indexOf
+// console.log(groceries.indexOf("🍐"))
+
+// array length
+console.log(groceries.length)
