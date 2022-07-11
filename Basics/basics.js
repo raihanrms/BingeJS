@@ -119,4 +119,54 @@ groceries.push("🍓, 🍒, 🍑, 🍍")
 // console.log(groceries.indexOf("🍐"))
 
 // array length
-console.log(groceries.length)
+// console.log(groceries.length)
+
+// objects{}
+// key: value pairs
+const person1 = {
+    name1: "Raihan",
+    age1: 26,
+    favoriteFood1: "Apple",
+    favoriteColor1: "Yello"
+}
+
+// console.log(person.name1, person.age1, person.favoriteFood1, person.favoriteColor1)
+
+// dot notation
+// console.log(person.name1)
+
+// bracket notation
+// console.log(person["favoriteFood1"])
+
+// assign object
+person1['phone1'] = "123-456-7890"
+// console.log(person.phone1)
+
+const person2 = {
+    name2: 'Qazi',
+    shirt2: 'black'
+}
+
+person2['YT2'] = 'Clever Programmer'
+// console.log(person2['YT2'])
+
+// ES5 arrow function with arg, object and template literals and methods (this)
+const introduction = (name, shirt, age, phone) => {
+    const personN = {
+        name: name,
+        shirt: shirt,
+        age: age,
+        phone: phone,
+        assets: 100000,
+        liabilities: 50000,
+        netWorth: function() {
+            return this.assets - this.liabilities
+        }
+    }
+    const intro = `Hi, my name is ${personN.name} and my the color of my shirt is ${personN.shirt}. \nI am ${personN.age} years old and my phone number is ${personN.phone}.\nMy networth is $${personN.netWorth()} USD`
+    return intro
+
+}
+// console.log(introduction("Raihan", "black"))
+// console.log(introduction("Qazi", "white", "26", "123-456-7890"))
+
