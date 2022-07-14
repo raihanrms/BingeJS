@@ -207,14 +207,30 @@ const letterCounter = (phrase) => {
 // console.log(letterCounter(phrase))
 
 // add numbers in array
-const sumArray = (num4) => {
+const addArray = (AR) => {
     // increment the result
-    let result1 = 0;
-    for (const num of num4){
-        result1 += num
+    let sumres = 0;
+    for (const sr in AR){
+        sumres += AR[sr]
     }
-    return { result1 }
+    return { sumres }
 }
 
-const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log(sumArray(num))
+// get the max number in array
+const max = (num4) => {
+    let res4 = num4[0]
+    for (const num of num4){
+        if (num > res4){
+            res4 = num
+        }
+    }
+    return { res4 }
+}
+// console.log(max([1, 3, 6, 9, 12, 15]))
+
+// calculate frequency of numbers in a array
+const freq = (num5) => {
+
+}
+
+// 2:31:48
