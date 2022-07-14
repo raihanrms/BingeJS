@@ -191,4 +191,18 @@ const doubleF = (num3) => {
 }
 // console.log(doubleF([1, 3, 6, 9, 12, 15]))
 
-// letter counter {time: 02:05:02}
+// letter counter 
+const letterCounter = (phrase) => {
+    let result = 0;
+    // for in and of
+    for(const index in phrase){
+        console.log(Number(index) + 1)
+        result = Number(index) + 1
+    }
+    return { result }
+}
+// const phrase = 'How many letters in this phrase?'
+const phrase = prompt("Enter a phrase: ")
+
+console.log(letterCounter(phrase))
+
