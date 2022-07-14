@@ -200,9 +200,21 @@ const letterCounter = (phrase) => {
         result = Number(index) + 1
     }
     return { result }
+    // return { result: phrase.length }
 }
 // const phrase = 'How many letters in this phrase?'
-const phrase = prompt("Enter a phrase: ")
+// const phrase = prompt("Enter a phrase: ")
+// console.log(letterCounter(phrase))
 
-console.log(letterCounter(phrase))
+// add numbers in array
+const sumArray = (num4) => {
+    // increment the result
+    let result1 = 0;
+    for (const num of num4){
+        result1 += num
+    }
+    return { result1 }
+}
 
+const num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(sumArray(num))
