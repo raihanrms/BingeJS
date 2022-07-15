@@ -265,5 +265,57 @@ const wordFreq = (phrase) => {
 // const phrase = prompt("Enter a phrase: ")
 // console.log(wordFreq(phrase))
 
-// import function from different directory
-import { Addition } from './Addition.js'
+// higher order functions - function that takes a function as an argument
+
+// map - loops and returns a new array implicit return 
+let num5 = [1, 2, 3, 4, 5].map(Number => Number * 2)
+//     console.log(num5)
+
+const doubleMap = (num6) => {
+    return num6.map(Number => Number * 2)
+}
+// console.log(doubleMap([1, 2, 3, 4, 5]))
+
+// filter - loops and returns an array with matching conditions
+// filter function
+const filterF = (Fnum, FGT) => {
+    let Fresult = []
+    for (const num of Fnum){
+        if (num > FGT){
+            Fresult.push(num)
+        }
+    }
+    return Fresult
+}
+//console.log(filterF([1, 2, 3, 4, 5], 2))
+
+// greater than 3 using filter method
+const greaterThan3 = (num7) => {
+    return num7.filter(Number => Number > 3)
+}
+// console.log(greaterThan3([1, 2, 3, 4, 5]))
+// && - and
+// const AND = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// console.log(AND.filter(AND => AND > 3 && AND < 7))
+
+// || - or
+// const OR = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// console.log(OR.filter(OR => OR > 10 || OR < 7))
+
+// show richest actors
+const actors = [
+    {name: 'Tom Cruise', age: 56, netWorth: 1500000},
+    {name: 'Robert De Niro', age: 25, netWorth: 2500000},
+    {name: 'Al Pacino', age: 66, netWorth: 3000000},
+    {name: 'Marlon Brando', age: 75, netWorth: 4000000},
+    {name: 'Jack Nicholson', age: 45, netWorth: 50000},
+    {name: 'Daniel Day-Lewis', age: 60, netWorth: 6000000},
+    {name: 'Dustin Hoffman', age: 79, netWorth: 7000000},
+]
+let AR = actors.filter(actor => actor.netWorth > 3000000)
+playground.innerHTML = `<h1>${AR[0].name}</h1>`
+
+
+// reduce
+
+// 3:20:43 
