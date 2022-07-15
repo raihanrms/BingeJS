@@ -1,15 +1,8 @@
-// Test you code by forking this repl: 
-// 👉 https://replit.com/@CleverLance/ConvertHoursToSeconds#solution.js
+// Write a function that takes a parameter (hours) and converts it to seconds
+const prompt = require("prompt-sync")();
 
-// https://www.loom.com/share/3de1aa5d007047ef82652530f04600b1
-
-// Write a function that takes a parameter (hours) and converts
-// it to seconds
-
-function howManySeconds(hours) {
-  // Your function should return an integer
-  // of how many seconds are in the hour
+const howManySeconds = (hours) => {
+    return hours * 3600
 }
-
-//Topics: Variables,functions, Math
-
+const hours = prompt("Enter hours: ")
+console.log(howManySeconds(hours))
