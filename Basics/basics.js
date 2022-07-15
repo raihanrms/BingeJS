@@ -246,15 +246,21 @@ const letterFreq = (phrase) => {
 
 // word frequency in a phrase
 const wordFreq = (phrase) => {
-    let result = {}
-    for (const word of phrase.split(' ')){
-        if (word in result){
-            result[word]++
-        } else {
-            result[word] = 1
-        }
-    }
-    return { word:result }
+    const word = phrase.split(' ')
+
+    // calling similarly coded function with word
+    return letterFreq(word)
+
+    // hard coded
+    // let result = {}
+    // for (const word of phrase.split(' ')){
+    //     if (word in result){
+    //         result[word]++
+    //     } else {
+    //         result[word] = 1
+    //     }
+    // }
+    // return { word:result }
 }
 // const phrase = prompt("Enter a phrase: ")
 // console.log(wordFreq(phrase))
