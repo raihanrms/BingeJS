@@ -228,9 +228,33 @@ const max = (num4) => {
 }
 // console.log(max([1, 3, 6, 9, 12, 15]))
 
-// calculate frequency of numbers in a array
-const freq = (num5) => {
-
+// calculate frequency of letters in a phrase
+const letterFreq = (phrase) => {
+    let result = {}
+    for (const letter of phrase){
+        if (letter in result){
+            result[letter]++
+        } else {
+            result[letter] = 1
+        }
+    }
+    return { result }
 }
 
-// 2:31:48
+// const phrase = prompt("Enter a phrase: ")
+// console.log(letterFreq('This is another test'))
+
+// word frequency in a phrase
+const wordFreq = (phrase) => {
+    let result = {}
+    for (const word of phrase.split(' ')){
+        if (word in result){
+            result[word]++
+        } else {
+            result[word] = 1
+        }
+    }
+    return { word:result }
+}
+// const phrase = prompt("Enter a phrase: ")
+// console.log(wordFreq(phrase))
