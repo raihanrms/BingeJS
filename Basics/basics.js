@@ -265,9 +265,5 @@ const wordFreq = (phrase) => {
 // const phrase = prompt("Enter a phrase: ")
 // console.log(wordFreq(phrase))
 
-// hours to seconds
-const hoursToSeconds = (hours) => {
-    return hours * 3600
-}
-const hours = prompt("Enter hours: ")
-console.log(hoursToSeconds(hours))
+// import function from different directory
+import { Addition } from './Addition.js'
