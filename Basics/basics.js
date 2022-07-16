@@ -328,5 +328,9 @@ const Rmul = (a, b) => a * b
 const rNum = [1, 2, 3, 4]
 const RN = rNum.reduce(Rsum) // called in the function from above
 const RM = rNum.reduce(Rmul) // called in the function from above
-console.log(RN)
-console.log(RM)
+// console.log(RN)
+// console.log(RM)
+
+// DOM manipulation 
+// GO to Exercices to see DOM.js
+

@@ -11,3 +11,5 @@ style.css
 playground.js
 node_modules
 package-lock.json
+exercises/index.html
+exercises/style.css
