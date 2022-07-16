@@ -11,5 +11,6 @@
 | Exercice | File name | File |
 |:---:|:---:|:---:|
 | 1 | Practicing functions | [function.js](https://github.com/raihanrms/BingeJS/blob/main/functions/sum/exercise/script.js) |
-| 2 | Convert Hour to seconds | [converthourstoseconds.js]() |
-| 3 | Sum Actor Networth | [sumNetworth.js]() |
+| 2 | Convert Hour to seconds | [converthourstoseconds.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/converthourstoseconds.js) |
+| 3 | Sum Actor Networth | [sumNetworth.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/sumNetworth.js) |
+| 4 | | 
