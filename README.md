@@ -13,4 +13,4 @@
 | 1 | Practicing functions | [function.js](https://github.com/raihanrms/BingeJS/blob/main/functions/sum/exercise/script.js) |
 | 2 | Convert Hour to seconds | [converthourstoseconds.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/converthourstoseconds.js) |
 | 3 | Sum Actor Networth | [sumNetworth.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/sumNetworth.js) |
-| 4 | Click with DOM | [DOM.js & index.html]() |
+| 4 | Click with DOM | [Check it on Replit](https://replit.com/@raihanrms/DOM-Manupilation) |
