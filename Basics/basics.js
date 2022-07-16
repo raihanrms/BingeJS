@@ -302,6 +302,7 @@ const greaterThan3 = (num7) => {
 // const OR = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 // console.log(OR.filter(OR => OR > 10 || OR < 7))
 
+
 // show richest actors
 const actors = [
     {name: 'Tom Cruise', age: 56, netWorth: 1500000},
@@ -313,9 +314,19 @@ const actors = [
     {name: 'Dustin Hoffman', age: 79, netWorth: 7000000},
 ]
 let AR = actors.filter(actor => actor.netWorth > 3000000)
-playground.innerHTML = `<h1>${AR[0].name}</h1>`
+// console.log(AR)
+let AA = AR.map(actor => actor.name).join(', ')
+// console.log(AA)
+// playground.innerHTML += `<h1>${AR[1].name}</h1>`
 
+// reduce - loops and returns a accumulator
 
-// reduce
+// summing an array of numbers with reduce
+const Rsum = (a, b) => a + b
+const Rmul = (a, b) => a * b
 
-// 3:20:43 
+const rNum = [1, 2, 3, 4]
+const RN = rNum.reduce(Rsum) // called in the function from above
+const RM = rNum.reduce(Rmul) // called in the function from above
+console.log(RN)
+console.log(RM)
