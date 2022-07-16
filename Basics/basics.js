@@ -332,5 +332,6 @@ const RM = rNum.reduce(Rmul) // called in the function from above
 // console.log(RM)
 
 // DOM manipulation 
-// GO to Exercices to see DOM.js
+// GO to Exercices to see DOM.js (https://replit.com/@raihanrms/DOM-Manupilation)
 
+// 4:22:56
