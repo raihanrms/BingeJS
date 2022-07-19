@@ -12,7 +12,7 @@ playground.js
 node_modules
 package-lock.json
 
-functions/sum/solution
+functions/sum
 
 exercises/index.html
 exercises/style.css
