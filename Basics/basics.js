@@ -337,6 +337,7 @@ const RM = rNum.reduce(Rmul) // called in the function from above
 // 05:06:00
 
 // small exercise for rock paper scissors
+// select random element from array
 const randomFruits = (Flist) => {
     const randomGen = Math.floor(Math.random() * Flist.length)
     console.log(randomGen)
@@ -344,4 +345,7 @@ const randomFruits = (Flist) => {
 }
 
 const Flist = ['🍎', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🍒', '🍑', '🍍']
-console.log(randomFruits(Flist))
+// console.log(randomFruits(Flist))
+
+// conditional statements
+// navigate to BingeJS > Exercises > weatherScore.js
