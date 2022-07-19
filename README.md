@@ -15,4 +15,5 @@
 | 3 | Sum Actor Networth | [sumNetworth.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/sumNetworth.js) |
 | 4 | Click with DOM | [Check it on Replit](https://replit.com/@raihanrms/DOM-Manupilation) |
 | 5 | Tip Calculator | [Project/tip-calculator](https://github.com/raihanrms/BingeJS/tree/main/projects/tip-calculator/exercise) |
-| 6 | ... | ... |
+| 6 | Weather Score | [weatherScore.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/weatherScore.js) |
+| 7 | Rock Paper Sissors | [Project/rockpapersissors]() | 
