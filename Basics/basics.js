@@ -334,8 +334,6 @@ const RM = rNum.reduce(Rmul) // called in the function from above
 // DOM manipulation 
 // GO to Exercices to see DOM.js (https://replit.com/@raihanrms/DOM-Manupilation)
 
-// 05:06:00
-
 // small exercise for rock paper scissors
 // select random element from array
 const randomFruits = (Flist) => {
@@ -349,3 +347,5 @@ const Flist = ['🍎', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🍒', '
 
 // conditional statements
 // navigate to BingeJS > Exercises > weatherScore.js
+
+// 5:24:34
