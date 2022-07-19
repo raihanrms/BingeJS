@@ -14,3 +14,5 @@
 | 2 | Convert Hour to seconds | [converthourstoseconds.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/converthourstoseconds.js) |
 | 3 | Sum Actor Networth | [sumNetworth.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/sumNetworth.js) |
 | 4 | Click with DOM | [Check it on Replit](https://replit.com/@raihanrms/DOM-Manupilation) |
+| 5 | Tip Calculator | [Project/tip-calculator](https://github.com/raihanrms/BingeJS/tree/main/projects/tip-calculator/exercise) |
+| 6 | ... | ... |
