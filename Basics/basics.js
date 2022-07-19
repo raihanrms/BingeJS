@@ -336,7 +336,12 @@ const RM = rNum.reduce(Rmul) // called in the function from above
 
 // 05:06:00
 
-const randomFruits = () => {
-    let friuits = ['🍎', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🍒', '🍑', '🍍']
-    console.log(fruits)
+// small exercise for rock paper scissors
+const randomFruits = (Flist) => {
+    const randomGen = Math.floor(Math.random() * Flist.length)
+    console.log(randomGen)
+    return Flist[randomGen]
 }
+
+const Flist = ['🍎', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🍒', '🍑', '🍍']
+console.log(randomFruits(Flist))
