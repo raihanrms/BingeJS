@@ -334,4 +334,9 @@ const RM = rNum.reduce(Rmul) // called in the function from above
 // DOM manipulation 
 // GO to Exercices to see DOM.js (https://replit.com/@raihanrms/DOM-Manupilation)
 
-// 4:22:56
+// 05:06:00
+
+const randomFruits = () => {
+    let friuits = ['🍎', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🍒', '🍑', '🍍']
+    console.log(fruits)
+}
