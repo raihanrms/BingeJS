@@ -16,4 +16,4 @@
 | 4 | Click with DOM | [Check it on Replit](https://replit.com/@raihanrms/DOM-Manupilation) |
 | 5 | Tip Calculator | [tip-calculator](https://github.com/raihanrms/BingeJS/tree/main/projects/tip-calculator/exercise) |
 | 6 | Weather Score | [weatherScore.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/weatherScore.js) |
-| 7 | Rock Paper Sissors | [rockpapersissors]() | 
+| 7 | Rock Paper Sissors | [rockpapersissors](https://github.com/raihanrms/BingeJS/tree/main/projects/rockpaperscissors/exercise) | 
