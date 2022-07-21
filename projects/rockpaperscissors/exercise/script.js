@@ -4,7 +4,7 @@
 */
 
 // Storing the scores as a global variable
-const totalScore = {computerScore: -100, playerScore: -100}
+const totalScore = {computerScore: 0, playerScore: 0}
 
 // ** getComputerChoice randomly selects between `rock` `paper` `scissors` and returns that string **
 function getComputerChoice() {
@@ -40,6 +40,7 @@ function getResult(playerChoice, computerChoice) {
   // return score
   return score;
 }
+
 //console.log(getResult('Rock', 'Rock'));
 
 // ** showResult updates the DOM to `You Win!` or `You Lose!` or `It's a Draw!` based on the score. Also shows Player Choice vs. Computer Choice**
@@ -62,11 +63,10 @@ function showResult(score, playerChoice, computerChoice) {
   let hands = document.getElementById('hands')
   
   
-  playerScore.innerText = `${Number(playerScore.innerText) + score}`
   hands.innerText = `🧔 ${playerChoice} vs 🤖 ${computerChoice}`;
+  playerScore.innerText = `Your Score: ${totalScore['playerScore']}`;
 
 }
-
 
 // ** Calculate who won and show it on the screen **
 function onClickRPS(playerChoice) {
@@ -100,11 +100,14 @@ function playGame() {
 
   // Add a click listener to the end game button that runs the endGame() function on click
   let endGameButton = document.getElementById('endGameButton');
-    endGameButton.onclick = () => endGame(); 
+    endGameButton.onclick = () => endGame(totalScore); 
 }
 
 // ** endGame function clears all the text on the DOM **
-function endGame() {
+function endGame(totalScore) {
+  totalScore['playerScore'] = 0
+  totalScore['computerScore'] = 0
+  
   let playerScore = document.getElementById('player-score')
   let hands = document.getElementById('hands')
   let result = document.getElementById('result')
