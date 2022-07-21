@@ -60,11 +60,21 @@ function showResult(score, playerChoice, computerChoice) {
     }
     
   let playerScore = document.getElementById('player-score')
+  let computerScore = document.getElementById('computer-score')
+  let winning = document.getElementById('winning')
   let hands = document.getElementById('hands')
   
   
   hands.innerText = `🧔 ${playerChoice} vs 🤖 ${computerChoice}`;
   playerScore.innerText = `Your Score: ${totalScore['playerScore']}`;
+  computerScore.innerText = `Computer Score: ${totalScore['computerScore']}`;
+
+  // show who is winning
+  if (totalScore['playerScore'] > totalScore['computerScore']) {
+    winning.innerText = `You are winning!🙌 `;
+  } else {
+    winning.innerText = `Computer is winning!🐑 `;
+  }
 
 }
 
@@ -84,6 +94,7 @@ function onClickRPS(playerChoice) {
 
   // Update the score
   totalScore['playerScore'] += score
+  totalScore['computerScore'] += (score * -1)
   // console.log(totalScore)
 }
 
