@@ -1,7 +1,8 @@
 api
 classes
 dom
-solution
+
+Solution
 notes
 replit.nix
 
@@ -21,4 +22,3 @@ projects/fetchmovies
 projects/fightingGame
 projects/stopwatch
 projects/weather-app
-projects/tip-calculator/solution
