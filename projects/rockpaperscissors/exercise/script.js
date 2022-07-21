@@ -132,5 +132,5 @@ function endGame(totalScore) {
   hands.innerText = ''
   result.innerText = ''
 }
-
+}
 playGame()
