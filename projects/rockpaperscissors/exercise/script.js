@@ -18,8 +18,8 @@ function getComputerChoice() {
 // ** getResult compares playerChoice & computerChoice and returns the score accordingly **
 function getResult(playerChoice, computerChoice) {
   // return the result of score based on if you won, drew, or lost
-  let score;
-  
+  let score
+
   // All situations where human draws, set `score` to 0
   if (playerChoice === computerChoice) {
     score = 0; 
@@ -28,10 +28,13 @@ function getResult(playerChoice, computerChoice) {
   // make sure to use else ifs here
   } else if (playerChoice === "Rock" && computerChoice === "Scissors") {
     score = 1;
+
   } else if (playerChoice === "Paper" && computerChoice === "Rock") {
     score = 1;
+
   } else if (playerChoice === "Scissors" && computerChoice === "Paper") {
     score = 1; 
+    
   // Otherwise human loses (aka set score to -1)
   } else {
     score = -1;
@@ -59,6 +62,7 @@ function showResult(score, playerChoice, computerChoice) {
       break;
     }
     
+
   let playerScore = document.getElementById('player-score')
   let computerScore = document.getElementById('computer-score')
   let winning = document.getElementById('winning')
@@ -70,13 +74,13 @@ function showResult(score, playerChoice, computerChoice) {
   computerScore.innerText = `Computer Score: ${totalScore['computerScore']}`;
 
   // show who is winning
-  if (totalScore['playerScore'] > totalScore['computerScore']) {
-    winning.innerText = `You are winning!🙌 `;
-  } else {
-    winning.innerText = `Computer is winning!🐑 `;
-  }
+//   if (totalScore['playerScore'] > totalScore['computerScore']) {
+//     winning.innerText = `You are winning!🙌 `;
+//   } else {
+//     winning.innerText = `Computer is winning!🐑 `;
+//   }
 
-}
+// }
 
 // ** Calculate who won and show it on the screen **
 function onClickRPS(playerChoice) {
@@ -93,8 +97,8 @@ function onClickRPS(playerChoice) {
   // console.log({showResult})
 
   // Update the score
-  totalScore['playerScore'] += score
-  totalScore['computerScore'] += (score * -1)
+  // totalScore['playerScore'] += score
+  // totalScore['computerScore'] += score
   // console.log(totalScore)
 }
 
@@ -122,6 +126,7 @@ function endGame(totalScore) {
   let playerScore = document.getElementById('player-score')
   let hands = document.getElementById('hands')
   let result = document.getElementById('result')
+  
   
   playerScore.innerText = ''
   hands.innerText = ''
