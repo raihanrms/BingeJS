@@ -348,4 +348,4 @@ const Flist = ['🍎', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🍒', '
 // conditional statements
 // navigate to BingeJS > Exercises > weatherScore.js
 
-// 6:14:01
+// 7:40:00
