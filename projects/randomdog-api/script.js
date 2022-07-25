@@ -3,12 +3,23 @@
 // .then is a promise
 // asyncronous programming
 
-console.log("1st run")
+console.log("Initial Check")
 
-fetch('https://dog.ceo/api/breeds/image/random')
-    .then(response => response.json())
-    .then(json => console.log('2nd Run', json))
+const dogImageDiv = document.getElementById("dogImage")
+const dogButton = document.getElementById("dogButton")
 
-console.log("3rd run")
+const getNewDog = () => {
+    fetch('https://dog.ceo/api/breeds/image/random')
+        .then(response => response.json())
+        .then(json => {
+            // console.log(json.message)
+            dogImageDiv.innerHTML = `<img src="${json.message}" 
+            height=500 width=500/>`
+        })
+}
 
-// 6:24:12
+// dogButton.onclick = () => console.log("Clicked to get a new dog image")
+dogButton.onclick = () => getNewDog()
+console.log("After Check")
+
+// 6:32:12
