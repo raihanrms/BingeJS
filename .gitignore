@@ -15,9 +15,6 @@ package-lock.json
 
 functions/sum
 
-exercises/index.html
-exercises/style.css
-
 projects/fetchmovies
 projects/fightingGame
 projects/stopwatch
