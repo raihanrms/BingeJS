@@ -9,7 +9,7 @@
 
 
 | Exercice/Projects | File name | File |
-|:---:|:---:|:---:|
+|:---|:---:|:---:|
 | 1 | Sum function | [sum.js](https://github.com/raihanrms/BingeJS/tree/main/functions/sum.js) |
 | 2 | Hours -> Seconds | [hourstoseconds.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/converthourstoseconds.js) |
 | 3 | Actor NetWorth | [sumNetworth.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/sumNetworth.js) |
