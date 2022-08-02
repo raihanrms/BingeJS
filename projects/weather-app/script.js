@@ -6,7 +6,7 @@
  */
 
 // API_KEY for maps api
-let API_KEY = "a8e71c9932b20c4ceb0aed183e6a83bb";
+
 
 /**
  * Retrieve weather data from openweathermap
@@ -14,8 +14,8 @@ let API_KEY = "a8e71c9932b20c4ceb0aed183e6a83bb";
  * HINT: URL should look like this: 
  * https://api.openweathermap.org/data/2.5/weather?q=detroit&appid=a8e71c9932b20c4ceb0aed183e6a83bb&units=imperial
  */
-getWeatherData = (city) => {
-  const URL = "https://api.openweathermap.org/data/2.5/weather";
+getWeatherData = () => {
+  
   //HINT: Use template literals to create a url with input and an API key
 
   //CODE GOES HERE
@@ -26,7 +26,6 @@ getWeatherData = (city) => {
  * HINT: Use the promise returned from getWeatherData()
  */
 searchCity = () => {
-  const city = document.getElementById('city-input').value;
   // CODE GOES HERE
 
 }
