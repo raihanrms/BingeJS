@@ -6,8 +6,7 @@ Solutions
 notes
 replit.nix
 
-index.html
-style.css
+
 
 playground.js
 node_modules
@@ -18,7 +17,6 @@ functions/sum
 projects/fetchmovies
 projects/fightingGame
 projects/stopwatch
-projects/weather-app
 
 exercises/htmlConsole
 exercises/arraysorting.js

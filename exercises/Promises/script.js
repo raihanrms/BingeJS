@@ -42,7 +42,7 @@ getDog()
 const getSoupAsyncAwait = async () => {
     
     // object that represents the promise
-    const data = {rating: 0, tip: 0, pay: 0, review: 0}
+    const data = {rating: null, tip: null, pay: null, review: null}
     
     try {
     const soup = await promiseOne
