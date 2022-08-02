@@ -19,7 +19,8 @@
 | 7 | Rock Paper Sissors | [rockpapersissors](https://github.com/raihanrms/BingeJS/tree/main/projects/rockpaperscissors) | 
 | 8 | Random Dog | [randomdog-api](https://github.com/raihanrms/BingeJS/tree/main/projects/randomdog-api)|
 | 9 | Super Hero (_not working_) | [superHero ](https://github.com/raihanrms/BingeJS/tree/main/projects/superHero) |
-| 10 | Promises | [Promises](https://github.com/raihanrms/BingeJS/tree/main/exercises/Promises) |
+| 10 | Promises (Async/Await)| [Promises](https://github.com/raihanrms/BingeJS/tree/main/exercises/Promises) |
+| 11 | Weather App | [weather-app](https://github.com/raihanrms/BingeJS/tree/main/projects/weather-app) |
 
 > Total time spent
 
