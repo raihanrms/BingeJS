@@ -10,7 +10,7 @@
 |Basics|Recalling all the basics|[basics.js](https://github.com/raihanrms/BingeJS/blob/main/Basics/basics.js)|
 
 
-<h3 align="center">Exercice/Projects</h3>
+<h3 align="left">Exercises/Projects</h3>
  
 | No. | File name | File |
 |:---:|:---:|:---:|
