@@ -349,3 +349,5 @@ const Flist = ['🍎', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🍒', '
 // navigate to BingeJS > Exercises > weatherScore.js
 
 // 8:26:00
+
+// SuperHero API and weather API is not working...
