@@ -4,15 +4,17 @@
 > Distributed the files under folders.
 
 <h3 align="center">Basics</h3>
-| | | |  
+
 |Folder|Description|File|
+|---|---|---|
 |:---:|:---:|:---:|
 |Basics|Recalling all the basics|[basics.js](https://github.com/raihanrms/BingeJS/blob/main/Basics/basics.js)|
 
 
 <h3 align="center">Exercice/Projects</h3>
-| | | |  
+ 
 | No. | File name | File |
+|---|---|---|
 |:---:|:---:|:---:|
 | 1 | Sum function | [sum.js](https://github.com/raihanrms/BingeJS/tree/main/functions/sum.js) |
 | 2 | Hours -> Seconds | [hourstoseconds.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/converthourstoseconds.js) |
