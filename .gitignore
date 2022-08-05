@@ -25,3 +25,5 @@ exercises/daysinamonth.js
 exercises/findMax.js
 exercises/palindromechecker.js
 exercises/savingsstrategy.js
+
+.gitignore
