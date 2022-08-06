@@ -1,12 +1,12 @@
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '4a0b4476d5msh56ea7354a2dad35p15571djsn64fbcb4ba08e',
-		'X-RapidAPI-Host': 'weatherapi-com.p.rapidapi.com'
+		'X-RapidAPI-Key': 'feb34cd0d4msh13dc2e0076805f9p17c16fjsn285a02a07c45',
+		'X-RapidAPI-Host': 'community-open-weather-map.p.rapidapi.com'
 	}
 };
 
-fetch('https://weatherapi-com.p.rapidapi.com/future.json?q=Dhaka&dt=2022-12-25', options)
+fetch('https://community-open-weather-map.p.rapidapi.com/weather?q=Dhaka%2Cbd&units=imperial', options)
 	.then(response => response.json())
 	.then(response => console.log(response))
 	.catch(err => console.error(err));
