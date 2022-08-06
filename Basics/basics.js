@@ -348,6 +348,6 @@ const Flist = ['🍎', '🍊', '🍋', '🍌', '🍉', '🍇', '🍓', '🍒', '
 // conditional statements
 // navigate to BingeJS > Exercises > weatherScore.js
 
-// 8:26:00
+// SuperHero API is not working...
+// 08:39:20
 
-// SuperHero API and weather API is not working...
