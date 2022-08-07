@@ -9,24 +9,28 @@
 
 <h3 align="left">Basics</h3>
 
-|Folder|Description|File|
+| Folder | Description | File |
 |:---:|:---:|:---:|
 |Basics|Recalling all the basics|[basics.js](https://github.com/raihanrms/BingeJS/blob/main/Basics/basics.js)|
 
+<h3 align="left">Fundamentals</h3>
+
+|Folder| Description | File |
+|:---:|:---:|:---:|
+| DOM | DOM Manupilation | [red-yellow-green](https://github.com/raihanrms/BingeJS/blob/main/Basics/) |
+| Function | Sum function | [sum.js](https://github.com/raihanrms/BingeJS/tree/main/functions/sum.js) |
 
 <h3 align="left">Exercises/Projects</h3>
  
 | No. | File name | File |
 |:---:|:---:|:---:|
-| 1 | Sum function | [sum.js](https://github.com/raihanrms/BingeJS/tree/main/functions/sum.js) |
-| 2 | Hours -> Seconds | [hourstoseconds.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/converthourstoseconds.js) |
-| 3 | Actor NetWorth | [sumNetworth.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/sumNetworth.js) |
-| 4 | Click with DOM | [Check it on Replit](https://replit.com/@raihanrms/DOM-Manupilation) |
-| 5 | Tip Calculator | [tip-calculator](https://github.com/raihanrms/BingeJS/tree/main/projects/tip-calculator/exercise) |
-| 6 | Weather Score | [weatherScore.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/weatherScore.js) |
-| 7 | Rock Paper Sissors | [rockpapersissors](https://github.com/raihanrms/BingeJS/tree/main/projects/rockpaperscissors) | 
-| 8 | Random Dog | [randomdog-api](https://github.com/raihanrms/BingeJS/tree/main/projects/randomdog-api)|
-| 9 | Super Hero (_not working_) | [superHero ](https://github.com/raihanrms/BingeJS/tree/main/projects/superHero) |
-| 10 | Promises (Async/Await)| [Promises](https://github.com/raihanrms/BingeJS/tree/main/exercises/Promises) |
-| 11 | Weather App (_not working_)| [weather-app](https://github.com/raihanrms/BingeJS/tree/main/projects/weather-app) |
-
+| 1 | Hours -> Seconds | [hourstoseconds.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/converthourstoseconds.js) |
+| 2 | Actor NetWorth | [sumNetworth.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/sumNetworth.js) |
+| 3 | Click with DOM | [Check it on Replit](https://replit.com/@raihanrms/DOM-Manupilation) |
+| 4 | Tip Calculator | [tip-calculator](https://github.com/raihanrms/BingeJS/tree/main/projects/tip-calculator/exercise) |
+| 5 | Weather Score | [weatherScore.js](https://github.com/raihanrms/BingeJS/blob/main/exercises/weatherScore.js) |
+| 6 | Rock Paper Sissors | [rockpapersissors](https://github.com/raihanrms/BingeJS/tree/main/projects/rockpaperscissors) | 
+| 7 | Random Dog | [randomdog-api](https://github.com/raihanrms/BingeJS/tree/main/projects/randomdog-api)|
+| 8 | Super Hero (_not working_) | [superHero ](https://github.com/raihanrms/BingeJS/tree/main/projects/superHero) |
+| 9 | Promises (Async/Await)| [Promises](https://github.com/raihanrms/BingeJS/tree/main/exercises/Promises) |
+| 10 | Weather App | [weather-app](https://github.com/raihanrms/BingeJS/tree/main/projects/weather-app) |
