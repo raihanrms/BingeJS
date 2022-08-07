@@ -17,8 +17,10 @@
 
 |Folder| Description | File |
 |:---:|:---:|:---:|
-| DOM | DOM Manupilation | [red-yellow-green](https://github.com/raihanrms/BingeJS/blob/main/Basics/) |
-| Function | Sum function | [sum.js](https://github.com/raihanrms/BingeJS/tree/main/functions/sum.js) |
+| DOM | DOM Manupilation | [red-yellow-green](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/dom/red-yellow-green) |
+| Function | Sum function | [sum.js](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/functions/sum.js) |
+| Classes | 1. Car class | [classCar](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/classes/practice/) |
+|  | 2. Bank class | [bankClass](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/classes/practice/) |
 
 <h3 align="left">Exercises/Projects</h3>
  
