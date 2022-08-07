@@ -1,6 +1,6 @@
-# JavaScript Practice Projects 
+# JavaScript Practice
 ### Start Date: 2022/07/03
-> Distributed the files under folders.
+> 12 hours of JavaScript madness
 
 <h3 align="left">Total time spent</h3>
 
