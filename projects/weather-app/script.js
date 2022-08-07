@@ -15,10 +15,15 @@ API_KEY = 'a8e71c9932b20c4ceb0aed183e6a83bb'
  * https://api.openweathermap.org/data/2.5/weather?q=detroit&appid=a8e71c9932b20c4ceb0aed183e6a83bb&units=imperial
  */
 getWeatherData = () => {
-  
   //HINT: Use template literals to create a url with input and an API key
-
   //CODE GOES HERE
+
+
+  // fetch('https://api.openweathermap.org/data/2.5/weather?q=dhaka&appid=a8e71c9932b20c4ceb0aed183e6a83bb')
+	// .then(response => response.json())
+	// .then(data => console.log(data.weather[0].main))
+	// .catch(err => console.error(err));
+
 }
 
 /**
@@ -26,7 +31,8 @@ getWeatherData = () => {
  * HINT: Use the promise returned from getWeatherData()
  */
 searchCity = () => {
-  // CODE GOES HERE
+  const city = document.getElementById('city-input').value;
+  console.log(city)
 
 }
 
