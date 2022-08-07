@@ -26,14 +26,13 @@ const searchCity = async () => {
   })
 }
 
-const showWeatherData = (weatherData) => {
-  console.log(weatherData.main.temp)
+const showWeatherData = (weatherData) => {  
+  // console.log(weatherData.main.temp)
   document.getElementById('temp').innerText = weatherData.main.temp
-  document.getElementById('temp').innerText = weatherData.main.temp
-  document.getElementById('temp').innerText = weatherData.main.temp
-  document.getElementById('temp').innerText = weatherData.main.temp
-  document.getElementById('temp').innerText = weatherData.main.temp
-
-  
+  document.getElementById('city-name').innerText = weatherData.name
+  document.getElementById('weather-type').innerText = weatherData.weather[0].main
+  document.getElementById('min-temp').innerText = weatherData.main.temp_min
+  document.getElementById('max-temp').innerText = weatherData.main.temp_max
+  document.getElementById("weather-output").classList.add('visible');
 }
 
