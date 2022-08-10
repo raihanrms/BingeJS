@@ -46,7 +46,7 @@ class Car {
     stop(){
         console.log(`Hand brake was applied, it took 5 seconds to stop!`)
         this.currentSpeed = 0;
-        console.log(`The car is now stopped at ${this.currentSpeed} mph`)
+        // console.log(`The car is now stopped at ${this.currentSpeed} mph`)
     }
 }
 
@@ -56,7 +56,7 @@ const porsche = new Car('porsche', 'blue', 250)
 porsche.start()
 // porsche.drive(40)
 // porsche.drive(80)
-console.log(porsche.currentSpeed)
+// console.log(porsche.currentSpeed)
 
 // looped the drive method 5 times
 // as the arrays are classtype array we need to intantiate them first
@@ -64,12 +64,12 @@ const pnums = [1, 2, 3, 4, 5]
 pnums.forEach(_ => porsche.drive())
 
 porsche.zeroTosixty()
-porsche.stop()
 
-// console.log(porsche.currentSpeed)
-// porsche.brake()
-// porsche.brake()
-// console.log(porsche.currentSpeed)
+console.log(porsche.currentSpeed)
+porsche.brake()
+porsche.brake()
+console.log(porsche.currentSpeed)
+porsche.stop()
 
 // testing code for ferrari
 // ferrari.zeroTosixty()
@@ -83,3 +83,22 @@ porsche.stop()
 // console.log(ferrari.currentSpeed)
 
 // ferrari.stop()
+
+// const numbers = [1, 2, 3, 4, 5]
+// numbers.push(6)
+// console.log(typeof numbers)
+// console.log(numbers)
+
+// add methods to array datatype (custom push)
+// Array.prototype.myPush = function(item){
+//    this[this.length] = item
+//    return this
+// }
+// const fruits = ['🍌', '🍎', '🍐', '🍊', '🍋']
+// // push more fruits to the array
+// fruits.myPush('🍒')
+// fruits.myPush('🍓')
+// fruits.myPush('🍅')
+// fruits.myPush('🍆')
+// fruits.myPush('🍇')
+// console.log(fruits)
