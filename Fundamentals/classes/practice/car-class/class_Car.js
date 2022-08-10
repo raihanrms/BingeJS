@@ -11,6 +11,7 @@ class Car {
         this.currentSpeed = 0;
     }
 
+    // getters and setters
     getCurrentSpeed(){
         return this.currentSpeed;
     }
@@ -24,13 +25,15 @@ class Car {
     }
    
     // methods are functions that are attached to the object
-    // drive method
+    // start, drive, brake, stop methods
 
     start(){
         console.log(`The engines of the ${this.name} started, and the top speed is ${this.topSpeed} mph!`)
     }
 
     drive(){
+    // drive(speed=10){
+        // this.currentSpeed += speed
         this.currentSpeed += 10
         console.log(`The ${this.name} is accelarated to ${this.currentSpeed} mph`)
     }
@@ -49,19 +52,29 @@ class Car {
 const ferrari = new Car('Ferrari', 'red', 300)
 const porsche = new Car('porsche', 'blue', 250)
 
-// console.log(ferrari.name)
-// console.log(ferrari.color)
-// console.log(ferrari.TopSpeed)
+porsche.start()
+// porsche.drive(40)
+// porsche.drive(80)
+console.log(porsche.currentSpeed)
+
+// looped the drive method 5 times
+// as the arrays are classtype array we need to intantiate them first
+const pnums = [1, 2, 3, 4, 5]
+pnums.forEach(_ => porsche.drive())
+
+porsche.zeroTosixty()
+porsche.stop()
+
+// console.log(porsche.currentSpeed)
+// porsche.brake()
+// porsche.brake()
+// console.log(porsche.currentSpeed)
 
 // testing code for ferrari
 // ferrari.zeroTosixty()
 // ferrari.start()
-// ferrari.drive()
-// ferrari.drive()
-// ferrari.drive()
-// ferrari.drive()
-// ferrari.drive()
-// ferrari.drive()
+// const fnums = [1, 2, 3, 4, 5, 6]
+// fnums.forEach(_ => ferrari.drive())
 // console.log(ferrari.currentSpeed)
 
 // ferrari.brake()
@@ -69,20 +82,3 @@ const porsche = new Car('porsche', 'blue', 250)
 // console.log(ferrari.currentSpeed)
 
 // ferrari.stop()
-
-porsche.start()
-// looped the drive method 5 times
-// as the arrays are classtype array we need to intantiate them first
-const nums = [1, 2, 3, 4, 5]
-nums.forEach(_ => porsche.drive())
-console.log(porsche.getCurrentSpeed())
-porsche.zeroTosixty()
-porsche.stop()
-
-console.log(porsche.currentSpeed)
-
-// porsche.brake()
-// porsche.brake()
-// console.log(porsche.currentSpeed)
-
-
