@@ -24,6 +24,7 @@ class Car {
         }, 3000);
     }
    
+    // method can only be inside classes
     // methods are functions that are attached to the object
     // start, drive, brake, stop methods
 
