@@ -1,7 +1,10 @@
 ## Fundamentals of Javascript
 
-### Functions `>[Navigate](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/functions)`
+### Functions 
+`>[Navigate](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/functions)`
 
-### DOM  `>[Navigate](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/dom)`
+### DOM  
+`[Navigate](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/dom)`
 
-### Classes `>[Navigate](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/classes)`
+### Classes 
+> `[Navigate](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/classes)`
