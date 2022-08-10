@@ -17,29 +17,51 @@ class Car {
         this.currentSpeed = 0;
     }
 
+    zeroTosixty(){
+        setTimeout(() => {
+            console.log('This car can go from 0 to 60 in 2.9 seconds');
+            //this.currentSpeed = 60;
+            console.log(this.currentSpeed)
+        });
+    }
+
     // methods are functions that are attached to the object
     // drive method
     drive(){
+        // console.log(`The ${this.name}'s top speed is at ${this.topSpeed} mph`)
         this.currentSpeed += 10
-        console.log(`The ${this.name} is driving at ${this.speed} mph`)
-        console.log(`The ${this.name} is driving at ${this.currentSpeed} mph`)
+        console.log(`The ${this.name} is accelarating by 10 at ${this.currentSpeed} mph`)
     }
     // brake method
     brake(){
-        console.log(`The brakes were applied and the tires ${this.brake} on the road!`)
+        this.currentSpeed -= 10
+        console.log('Brakes applied: Speed goes down by 10!')
     }
     // stop(){
     //     console.log(`The ${this.name} applied the brakes and it took ${this.stop} seconds to stop!`)
     // }
 }
 
-const ferrari = new Car('Ferrari', 'red', 300, 'screached', 3.4)
+const ferrari = new Car('Ferrari', 'red', 300)
 
-console.log(ferrari.name)
-console.log(ferrari.color)
-console.log(ferrari.speed)
-console.log(ferrari.brake)
-console.log(ferrari.currentSpeed)
+// console.log(ferrari.name)
+// console.log(ferrari.color)
+// console.log(ferrari.TopSpeed)
+
+// testing code
+ferrari.zeroTosixty()
 
 ferrari.drive()
+ferrari.drive()
+ferrari.drive()
+ferrari.drive()
+ferrari.drive()
+ferrari.drive()
+console.log(ferrari.currentSpeed)
+
 ferrari.brake()
+console.log(ferrari.currentSpeed)
+
+ferrari.brake()
+console.log(ferrari.currentSpeed)
+
