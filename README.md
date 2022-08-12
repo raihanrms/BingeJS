@@ -36,3 +36,5 @@
 | 8 | Super Hero (_not working_) | [superHero ](https://github.com/raihanrms/BingeJS/tree/main/projects/superHero) |
 | 9 | Promises (Async/Await)| [Promises](https://github.com/raihanrms/BingeJS/tree/main/exercises/Promises) |
 | 10 | Weather App | [weather-app](https://github.com/raihanrms/BingeJS/tree/main/projects/weather-app) |
+
+> Alomst done with it.
