@@ -1,6 +1,6 @@
 # JavaScript Practice
 ### Start Date: 2022/07/03
-> 12 hours of JavaScript madness
+> 12 hours of JavaScript Basics
 
 <h3 align="left">Total time spent</h3>
 
