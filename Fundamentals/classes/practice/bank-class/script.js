@@ -1,42 +1,50 @@
 class Bank {
     constructor(balance){
-        this.balance = balance;
+        this.balance = balance
     }
-}
-
-getBalance = () => {
-    return this.balance;
-}
 
 // console.log(getBalance())
 
-depositeMoney = (amount) => {
-    this.balance += amount;
-    console.log('Deposite button is working')
-    console.log('Amount deposited: ' + amount)
-    console.log('New balance: ' + this.balance)
+depositeMoney(amount){
+    this.balance += amount
+    console.log('Deposited: ', `$${amount}`)
+    console.log({balance: this.balance})
+    }
+
+withdrawMoney(amount){
+    // guard clause
+    if(this.balance - amount <= 0){
+        console.log('Insufficient Funds')
+        console.log({balance: this.balance})
+        return
+    }
+    this.balance -= amount
+    console.log('Withdrawn: ', `$${amount}`)
+    console.log({balance: this.balance})
+    }
 }
 
-withdrawMoney = (amount) => {
-    this.balance -= amount;
-    console.log('Withdraw button is working')
-    console.log('Amount withdrawn: ' + amount)
-    console.log('New balance: ' + this.balance)
+const bank = new Bank(0)
+// console.log(bank.balance)
+
+// bank.depositeMoney(550)
+
+// bank.withdrawMoney(200)
+// bank.withdrawMoney(460)
+
+const depositeButton = document.getElementById('deposit')
+const withdrawButton = document.getElementById('withdraw')
+const amountInput = document.getElementById('amount')
+const balanceDiv = document.getElementById('balance')
+
+depositeButton.onclick = () => {
+    const amount = Number(amountInput.value)
+    bank.depositeMoney(amount)
+    balanceDiv.innerText = `Balance: ${bank.balance}`
 }
 
-// connect with dom
-const balance = document.getElementById('balance').values;
-const deposite = document.getElementById('deposite')
-const withdraw = document.getElementById('withdraw')
-
-
-
-const bank = new Bank(100)
-console.log(bank.balance)
-
-const showBalance = () => {
-    console.log(bank.balance)
-    document.getElementById('balance').innerHTML = bank.balance
-    document.getElementById('deposite').innerHTML = bank.depositeMoney
-    document.getElementById('withdraw').innerHTML = bank.withdrawMoney
+withdrawButton.onclick = () => {
+    const amount = Number(amountInput.value)
+    bank.withdrawMoney(Number(amountInput.value))
+    balanceDiv.innerText = `Balance: ${bank.balance}`
 }
