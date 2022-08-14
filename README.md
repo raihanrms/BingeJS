@@ -43,4 +43,4 @@
 |:---:|:---:|:---:|
 | 1 | Fighting Game | [Click here](https://github.com/raihanrms/BingeJS/tree/main/AdvancedJS/FightingGame) |
 
-> Alomst done with it.
+> Alomst done with it. 10 hours of it completed.
