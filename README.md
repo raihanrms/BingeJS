@@ -38,6 +38,7 @@
 | 10 | Weather App | [weather-app](https://github.com/raihanrms/BingeJS/tree/main/projects/weather-app) |
 
 <h3 align="left">Advanced JS</h3>
+
 | No. | Folder | Link |
 |:---:|:---:|:---:|
 | 1 | Fighting Game | [Click here]() |
