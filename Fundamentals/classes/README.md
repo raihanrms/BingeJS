@@ -4,4 +4,4 @@
 
 > [Car Class](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/classes/practice/car-class)
 
-> [Bank Class]()
+> [Bank Class](https://github.com/raihanrms/BingeJS/tree/main/Fundamentals/classes/practice/bank-class)
