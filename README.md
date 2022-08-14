@@ -41,6 +41,6 @@
 
 | No. | Folder | Link |
 |:---:|:---:|:---:|
-| 1 | Fighting Game | [Click here]() |
+| 1 | Fighting Game | [Click here](https://github.com/raihanrms/BingeJS/tree/main/AdvancedJS/FightingGame) |
 
 > Alomst done with it.
