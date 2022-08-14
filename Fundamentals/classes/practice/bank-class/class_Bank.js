@@ -26,9 +26,7 @@ withdrawMoney(amount){
 
 const bank = new Bank(0)
 // console.log(bank.balance)
-
 // bank.depositeMoney(550)
-
 // bank.withdrawMoney(200)
 // bank.withdrawMoney(460)
 
