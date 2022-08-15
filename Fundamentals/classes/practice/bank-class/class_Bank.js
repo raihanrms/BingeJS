@@ -22,7 +22,16 @@ withdrawMoney(amount){
     console.log('Withdrawn: ', `$${amount}`)
     console.log({balance: this.balance})
     }
+    
+// state() {
+//     if (bank.balance < 0){
+//         stateDiv.innerText = 'Insufficient Funds'
+//     } else {
+//         stateDiv.innerText = ' '
+//         }
+//     }
 }
+
 
 const bank = new Bank(0)
 // console.log(bank.balance)
@@ -34,6 +43,7 @@ const depositeButton = document.getElementById('deposit')
 const withdrawButton = document.getElementById('withdraw')
 const amountInput = document.getElementById('amount')
 const balanceDiv = document.getElementById('balance')
+// const stateDiv = document.getElementById('state')
 
 depositeButton.onclick = () => {
     const amount = Number(amountInput.value)
@@ -45,4 +55,7 @@ withdrawButton.onclick = () => {
     const amount = Number(amountInput.value)
     bank.withdrawMoney(Number(amountInput.value))
     balanceDiv.innerText = `Balance: ${bank.balance}`
+    // if (bank.balance < 0){
+    //     stateDiv.innerText = 'Insufficient Funds'
+    // }
 }
