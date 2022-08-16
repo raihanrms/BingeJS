@@ -47,6 +47,7 @@ const updateGame = () => {
 // qazi.name 👉 'Qazi'
 // qazi.health 👉 100
 // qazi.attackDmg 👉 7
+
 class Player {
   constructor() {}
   // ** Attack an enemy with a random number from 0 to YOUR attackDmg bonus **
