@@ -36,6 +36,8 @@ let playButton = document.getElementById('play')
 let resultDiv = document.getElementById('result')
 let p1HealthDiv = document.getElementById('p1Health')
 let p2HealthDiv = document.getElementById('p2Health')
+let p1NameDiv = document.getElementById('p1Name')
+let p2NameDiv = document.getElementById('p2Name')
 
 // ** Check if either players health is  0 and if it is, then update isOver to true **
 const updateGame = () => {
