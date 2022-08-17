@@ -36,12 +36,16 @@ let playButton = document.getElementById('play')
 let resultDiv = document.getElementById('result')
 let p1HealthDiv = document.getElementById('p1Health')
 let p2HealthDiv = document.getElementById('p2Health')
+let p1NameDiv = document.getElementById('p1Name')
+let p2NameDiv = document.getElementById('p2Name')
 
-console.log(p1HealthDiv.innerText)
+// console.log(p1HealthDiv.innerText)
 
 // ** Check if either players health is  0 and if it is, then update isOver to true **
 const updateGame = (p1,p2,p1HealthDiv,p2HealthDiv, gameState) => {
   // Update the DOM with the latest health of players
+  p1NameDiv.innerText = p1.name
+  p2NameDiv.innerText = p2.name
   
 }
 
@@ -69,7 +73,7 @@ class Player {
 // ** Create the Game class with all it's attributes and methods to run a match **
 class Game {
   constructor() {
-    
+    this.isOver = false; 
   }
 
   // ** If the game is over and a player has 0 health declare the winner! **
@@ -105,6 +109,7 @@ let p2 = player2
 
 // ** Create the game object from the Game class **
 let game = new Game();
+updateGame(p1,p2,game.isOver)
 
 // ** Save original Game Data **
 let gameState = game.isOver
