@@ -113,7 +113,6 @@ class Game {
       // play victory sound
       document.getElementById('victory').play()
       return message
-
   }
 
   // ** Reset the players health back to it's original state and isOver to FALSE **
@@ -173,7 +172,7 @@ document.addEventListener('keydown', function(e) {
 
 // ** Player 2 Controls **
 document.addEventListener('keydown', function(e) {
-  if(e.key == 'a' && p1.health > 0 && game.isOver == false){
+  if(e.key == 'p' && p1.health > 0 && game.isOver == false){
     p2.strike(p2,p1,p2.attackDmg)
     // sound effect
     document.getElementById('p2attack').play()
@@ -181,7 +180,7 @@ document.addEventListener('keydown', function(e) {
 })
 
 document.addEventListener('keydown', function(e) {
-  if(e.key == 's' && p1.health > 0){
+  if(e.key == 'o' && p1.health > 0){
     p2.heal(p2)
     // sound effect
     document.getElementById('p2heal').play()
@@ -204,3 +203,6 @@ document.addEventListener('keydown', function(e) {
 // console.log(p1.heal(player1))
 // console.log(p2.strike(player2, player1, p2.attackDmg))
 // console.log(p2.heal(player2))
+
+// Buggy
+// will continue later: https://youtu.be/lI1ae4REbFM?t=42132
