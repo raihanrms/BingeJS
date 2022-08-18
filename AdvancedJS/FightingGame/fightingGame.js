@@ -62,7 +62,7 @@ const updateGame = (p1,p2,p1HealthDiv,p2HealthDiv,gameState) => {
   if(p1.health <= 0 || p2.health <= 0){
     game.isOver = true
     gameState = game.isOver
-    resultDiv.innerText = game.declareWinner(p1,p2,gameState)
+    resultDiv.innerText = game.declareWinner(game.isOver, p1,p2)
     return gameState
   }
 }
@@ -80,11 +80,17 @@ class Player {
     enemy.health -= damageAmount
 
     // ** Update the DOM with the latest health of players **
-    updateGame(player,enemy, game.isOver)
+    updateGame(p1, p2,enemy, game.isOver)
     return `${player.name} attacked ${enemy.name} for ${damageAmount} damage`
   }
   // ** Heal the player for random number from  1 to 5 **
-  heal () {
+  heal (player) {
+    let HPAmount = Math.ceil(Math.random() * 5)
+    player.health += HPAmount
+
+    updateGame(p1,p2, game.isOver)
+
+    return `${player.name} healed for ${HPAmount} HP!`
 
   }
 }
@@ -97,7 +103,17 @@ class Game {
 
   // ** If the game is over and a player has 0 health declare the winner! **
   declareWinner(isOver,p1, p2) {
-    
+    let message;
+    if(isOver == true && p1.health <= 0){
+        message = `${p2.name} is the winner!`
+      } else if (isOver == true && p2.health <= 0){
+        message = `${p1.name} is the winner!`
+      }
+
+      // play victory sound
+      document.getElementById('victory').play()
+      return message
+
   }
 
   // ** Reset the players health back to it's original state and isOver to FALSE **
@@ -119,8 +135,8 @@ class Game {
 }
 
 // ** Create 2 players using the player class **
-let player1 = new Player('Raihan', 100, 15)
-let player2 = new Player('Faihan', 100, 15)
+let player1 = new Player('Raihan', 100, 10)
+let player2 = new Player('Faihan', 100, 10)
 
 // ** Save original Player Data **
 let p1 = player1
@@ -141,8 +157,50 @@ let gameState = game.isOver
 // Add functionality where players can press a button to attack OR heal
 
 // ** Player 1 Controls **
-console.log(p1.strike(player1, player2, p1.attackDmg))
+document.addEventListener('keydown', function(e) {
+  if(e.key == 'q' && p2.health > 0 && game.isOver == false){
+    p1.strike(p1,p2,p1.attackDmg)
+    // sound effect
+    document.getElementById('p1attack').play()
+  }
 
+  if(e.key == 'w' && p2.health > 0){
+    p1.heal(p1)
+    // sound effect
+    document.getElementById('p1heal').play()
+  }
+})
 
 // ** Player 2 Controls **
-console.log(p2.strike(player2, player1, p2.attackDmg))
+document.addEventListener('keydown', function(e) {
+  if(e.key == 'a' && p1.health > 0 && game.isOver == false){
+    p2.strike(p2,p1,p2.attackDmg)
+    // sound effect
+    document.getElementById('p2attack').play()
+  }
+})
+
+document.addEventListener('keydown', function(e) {
+  if(e.key == 's' && p1.health > 0){
+    p2.heal(p2)
+    // sound effect
+    document.getElementById('p2heal').play()
+  }
+})
+
+// ** Menu **
+// reset with R
+document.addEventListener('keydown', function(e) {
+  if(e.key == 'r' && game.isOver == true){
+    game.reset(p1,p2)
+    game.isOver = false
+    updateGame(p1,p2,game.isOver)
+  }
+})
+
+
+// ** Testing **
+// console.log(p1.strike(player1, player2, p1.attackDmg))
+// console.log(p1.heal(player1))
+// console.log(p2.strike(player2, player1, p2.attackDmg))
+// console.log(p2.heal(player2))
