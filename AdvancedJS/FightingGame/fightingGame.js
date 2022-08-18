@@ -34,26 +34,40 @@ These are all the DIV ID's you're gonna need access to 👇
 // ** Grabs elements from the DOM and stores them into variables **
 let playButton = document.getElementById('play')
 let resultDiv = document.getElementById('result')
-let p1HealthDiv = document.getElementById('p1Health')
-let p2HealthDiv = document.getElementById('p2Health')
 let p1NameDiv = document.getElementById('p1Name')
 let p2NameDiv = document.getElementById('p2Name')
 
+// for some reason the js was not reading the dom elements properly
+let p1HealthDiv = document.getElementById('p1Health')
+let p2HealthDiv = document.getElementById('p2Health')
+
+let p1HDiv = document.getElementById('test1')
+let p2HDiv = document.getElementById('test2')
 // console.log(p1HealthDiv.innerText)
 
-// ** Check if either players health is  0 and if it is, then update isOver to true **
-const updateGame = (p1,p2,p1HealthDiv,p2HealthDiv, gameState) => {
+const updateGame = (p1,p2,p1HealthDiv,p2HealthDiv,gameState) => {
+  // console.log(p1HealthDiv.innerText = p1.health)
   // Update the DOM with the latest health of players
   p1NameDiv.innerText = p1.name
   p2NameDiv.innerText = p2.name
   
+  // p1HealthDiv.innerText = p1.health
+  // p2HealthDiv.innerText = p2.health
+
+  p1HDiv.innerText = p1.health
+  p2HDiv.innerText = p2.health
+  
+  // ** Check if either players health is  0 and if it is, 
+  // then update isOver to true **
+  if(p1.health <= 0 || p2.health <= 0){
+    game.isOver = true
+    gameState = game.isOver
+    resultDiv.innerText = game.declareWinner(p1,p2,gameState)
+    return gameState
+  }
 }
 
 // ** Create the Player class which can create a player with all it's attributes and methods **
-// qazi = Player('Qazi', 100, 7)
-// qazi.name 👉 'Qazi'
-// qazi.health 👉 100
-// qazi.attackDmg 👉 7
 class Player {
   constructor(name, health, attackDamage) {
     this.name = name;
@@ -61,8 +75,13 @@ class Player {
     this.attackDmg = attackDamage;
   }
   // ** Attack an enemy with a random number from 0 to YOUR attackDmg bonus **
-  strike () {
+  strike (player, enemy, attackDmg) {
+    let damageAmount = Math.ceil(Math.random() * attackDmg)
+    enemy.health -= damageAmount
 
+    // ** Update the DOM with the latest health of players **
+    updateGame(player,enemy, game.isOver)
+    return `${player.name} attacked ${enemy.name} for ${damageAmount} damage`
   }
   // ** Heal the player for random number from  1 to 5 **
   heal () {
@@ -122,6 +141,8 @@ let gameState = game.isOver
 // Add functionality where players can press a button to attack OR heal
 
 // ** Player 1 Controls **
+console.log(p1.strike(player1, player2, p1.attackDmg))
 
 
 // ** Player 2 Controls **
+console.log(p2.strike(player2, player1, p2.attackDmg))

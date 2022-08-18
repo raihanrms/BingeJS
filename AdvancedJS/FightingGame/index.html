@@ -1,89 +1,66 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Fighting Game 🎮 </title>
   <link rel="icon" type="image/png" sizes="32x32" href="/AdvancedJS/FightingGame/gif/favicon-32x32.png">
+  
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  
-  <div class="title"><b>Fighting Game</b></div>
-  <br>
-  
-  <div class="menu">
-    <div class="p1Choices">
-      <div id="p1Name">Player 1</div>
-      <br>
-      <img 
-      id="p1" 
-      src="https://i.ibb.co/dpDQRvP/p1.gif"
-      />
-      <button 
-        onclick = "player1.strike(player1, player2, player1.attackDmg)"  
-        id="attack"
-      >
-        Attack
-      </button>
-      
-      <button 
-        onclick = "player1.heal(player1)" 
-        id="heal"
-      >
-        Heal
-      </button>
-      
-      <div  id="p1Health">100</div>
+    <div class="title"><b>Fighting Game</b></div>
+    <br>
+    <div class="menu">
+      <div class="p1Choices">
+        <div id="p1Name">Player 1</div>
+        
+        <br>
+        <img id="p1" src="https://i.ibb.co/dpDQRvP/p1.gif"/>
+        <br>
+        <button onclick = "player1.strike(player1, player2, player1.attackDmg)"
+        id="attack">Attack</button>
+        <br>
+        <button onclick = "player1.heal(player1)" id="heal">Heal</button>
+        
+        <div id="test1">100</div>
+        <!-- <div id="p1Health">100</div> -->
+
+      </div>
+        <button id="play">Run simulation</button>
+      <div class="p2Choices">
+        <div id="p2Name">Player 2</div>
+        <br>
+        <img id="p2" src="https://i.ibb.co/wCTx8ng/p2.gif"/>
+        <br>
+        <button onclick = "player2.strike(player2, player1, player2.attackDmg)"
+          id="attack">Attack</button>
+        <br>
+        <button onclick = "player2.heal(player2)" id="heal">Heal</button>
+        
+        <div id="test2">100</div>
+        <!-- <div id="p2Health">100</div> -->
+
+      </div>
     </div>
-
-      <button id="play">Run simulation</button>
-
-    <div class="p2Choices">
-      <div id="p2Name">Player 2</div>
-      <br>
-      <img 
-        id="p2" 
-        src="https://i.ibb.co/wCTx8ng/p2.gif"
-      />
-      <button 
-        onclick = "player2.strike(player2, player1, player2.attackDmg)"  
-        id="attack"
-      >
-        Attack
-      </button>
-      <button 
-        onclick = "player2.heal(player2)" 
-        id="heal"
-      >
-        Heal
-      </button>
-      <div id="p2Health">100</div>
+    <br>
+    <div class="resultContainer">
+        <div id="result"></div>
+        <button onclick="game.reset(p1,p2)">Reset</button>
     </div>
-
-  </div>
-  <br>
-  
-  <div class="resultContainer">
-      <div id="result"></div>
-      <button onclick="game.reset(p1,p2)">Reset</button>
-  </div>
-
-<audio id="p1attack" controls style="display:none">
-  <source src="sounds/fastpunch.mp3" type="audio/mpeg"> 
-</audio>
-<audio id="p1heal" controls style="display:none">
-  <source src="sounds/fastheal.mp3" type="audio/mpeg"> 
-</audio>
-<audio id="p2attack" controls style="display:none">
-  <source src="sounds/quickhit.mp3" type="audio/mpeg"> 
-</audio>
-<audio id="p2heal" controls style="display:none">
-  <source src="sounds/quickheal.mp3" type="audio/mpeg"> 
-</audio>
-  <script src="fightingGame.js"></script>
+    <audio id="p1attack" controls style="display:none">
+        <source src="sounds/fastpunch.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="p2attack" controls style="display:none">
+        <source src="sounds/fastpunch.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="p1heal" controls style="display:none">
+        <source src="sounds/fastheal.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="p2heal" controls style="display:none">
+        <source src="sounds/quickheal.mp3" type="audio/mpeg">
+    </audio>
+    <script src="fightingGame.js"></script>
 </body>
-
 </html>

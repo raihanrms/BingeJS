@@ -35,8 +35,13 @@ body {
   align-items: center;
 }
 
-#p1Health {
-  font-size: 50px;
+/* #p1Health {
+  font-size: 40px;
+} */
+
+#test1 {
+  font-size: 40px;
+  font-family: 'martap', sans-serif;
 }
 
 #p2{
@@ -56,9 +61,15 @@ body {
   align-items: center;
 }
 
-#p2Health {
+/* #p2Health {
   font-size: 50px;
+} */
+
+#test2 {
+  font-size: 40px;
+  font-family: 'martap', sans-serif;
 }
+
 
 #result {
   font-size: 50px
