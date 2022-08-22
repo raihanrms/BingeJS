@@ -117,7 +117,11 @@ class Game {
 
   // ** Reset the players health back to it's original state and isOver to FALSE **
   reset(p1,p2) {
-    
+    p1.health = 100
+    p2.health = 100
+    this.isOver = false
+    resultDiv.innerText = ''
+    updateGame(p1,p2, this.isOver)
   }
   
   // ** Simulates the whole match untill one player runs out of health **
