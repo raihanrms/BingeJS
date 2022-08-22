@@ -103,7 +103,7 @@ class Game {
 
   // ** If the game is over and a player has 0 health declare the winner! **
   declareWinner(isOver,p1, p2) {
-    let message;
+    let message = "Tied";
     if(isOver == true && p1.health <= 0){
         message = `${p2.name} is the winner!`
       } else if (isOver == true && p2.health <= 0){
@@ -126,13 +126,16 @@ class Game {
   
   // ** Simulates the whole match untill one player runs out of health **
   play(p1, p2) {
-    
+      this.reset(p1,p2);
     // Make sure the players take turns untill isOver is TRUE
-    
-    
+    while (!this.isOver){
+      p1.strike(p1,p2, p1.attackDmg)
+      p2.heal(p2)
+      p2.strike(p1,p2, p2.attackDmg)
+      p1.heal(p1)      
+    }
     // Once isOver is TRUE run the declareWinner() method 
-    
-
+    return this.declareWinner(this.isOver, p1,p2)
   }
 
 }
@@ -158,6 +161,7 @@ let gameState = game.isOver
 
 // ** BONUS **
 // Add functionality where players can press a button to attack OR heal
+playButton.onclick = () => resultDiv.innerText = game.play(p1,p2)
 
 // ** Player 1 Controls **
 document.addEventListener('keydown', function(e) {
