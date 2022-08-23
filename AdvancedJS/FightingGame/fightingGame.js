@@ -1,35 +1,4 @@
-/* 
-🌟 APP: Fighting Game
-
-Create an updateGame() function that will update the DOM with the state of the game 👇
-========================================
-
-- updateGame()
-
-These are the 2 classes you must create and their methods 👇
-========================================
-
-class Player {
-  - strike()
-  - heal()
-}
-
-class Game {
-  - play()
-  - checkIsOver()
-  - declareWinner()
-  - reset()
-}
-
-These functions are hard coded in the HTML. So, you can't change their names.
-
-These are all the DIV ID's you're gonna need access to 👇
-========================================================
-#1 ID 👉 'play' = Button to run simulation
-#2 ID 👉 'result' = Div that holds the winner of the match
-#3 ID 👉 'p1Health' = Div that holds player 1's health
-#4 ID 👉 'p2Health' = Div that holds player 2's health
-*/
+//🌟 APP: Fighting Game
 
 // ** Grabs elements from the DOM and stores them into variables **
 let playButton = document.getElementById('play')
@@ -38,8 +7,8 @@ let p1NameDiv = document.getElementById('p1Name')
 let p2NameDiv = document.getElementById('p2Name')
 
 // for some reason the js was not reading the dom elements properly
-let p1HealthDiv = document.getElementById('p1Health')
-let p2HealthDiv = document.getElementById('p2Health')
+// let p1HealthDiv = document.getElementById('p1Health')
+// let p2HealthDiv = document.getElementById('p2Health')
 
 let p1HDiv = document.getElementById('test1')
 let p2HDiv = document.getElementById('test2')
@@ -199,6 +168,15 @@ document.addEventListener('keydown', function(e) {
 // reset with R
 document.addEventListener('keydown', function(e) {
   if(e.key == 'r' && game.isOver == true){
+    game.play(p1,p2)
+    game.isOver = false
+    updateGame(p1,p2,game.isOver)
+  }
+})
+
+// simulate with S
+document.addEventListener('keydown', function(e){
+  if(e.key == 's' && game.isOver == true && game.isOver == false){
     game.reset(p1,p2)
     game.isOver = false
     updateGame(p1,p2,game.isOver)
