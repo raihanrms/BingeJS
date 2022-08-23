@@ -41,4 +41,7 @@
 
 | No. | Folder | Link |
 |:---:|:---:|:---:|
-| 1 | Fighting Game | [Click here](https://github.com/raihanrms/BingeJS/tree/main/AdvancedJS/FightingGame) |
+| 1 | Fighting Game (buggy) | [Click here](https://github.com/raihanrms/BingeJS/tree/main/AdvancedJS/FightingGame) |
+| 2 | Netflix Clone | [Click here](https://github.com/raihanrms/BingeJS/tree/main/AdvancedJS/NetflixClone) |
+
+<br>
