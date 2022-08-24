@@ -1,8 +1,10 @@
 # JavaScript Practice
-### Start Date: 2022/07/03
+### Thanks to Cleaver Programmer [Click](https://www.youtube.com/watch?v=lI1ae4REbFM)
+```Start: 2022/07/03 End: 2022/08/25```
+
 > 12 hours of JavaScript Basics
 
-<h3 align="left">Total time spent</h3>
+<h3 align="left">Total time spent:</h3>
 
 [![wakatime](https://wakatime.com/badge/user/0602677e-e1f1-4ba7-90c1-770c3a600207/project/be178c23-152e-45ec-9592-7df40482efdb.svg)](https://wakatime.com/badge/user/0602677e-e1f1-4ba7-90c1-770c3a600207/project/be178c23-152e-45ec-9592-7df40482efdb)
 
@@ -43,3 +45,4 @@
 |:---:|:---:|:---:|
 | 1 | Fighting Game _(buggy)_ | [Click here](https://github.com/raihanrms/BingeJS/tree/main/AdvancedJS/FightingGame) |
 | 2 | Netflix Clone | [Click here](https://github.com/raihanrms/BingeJS/tree/main/AdvancedJS/NetflixClone) |
+
