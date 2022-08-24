@@ -53,7 +53,8 @@ window.onload = () => {
         throw new Error('Something went wrong!')
       }
     }).then(data => {
-      console.log(data)
+      // console.log(data)
+      showMovies(data, dom_element, path_type)
     }).catch(error => {
       console.log(error)
     })
@@ -68,28 +69,32 @@ window.onload = () => {
   showMovies = (movies, dom_element, path_type) => {
     
     // Create a variable that grabs id or class
-  
-  
-    // Loop through object
-  
-  
-      // Within loop create an img element
-  
-  
-      // Set attribute
-  
-  
-      // Set source
-  
-  
-      // Add event listener to handleMovieSelection() onClick
-  
+    let moviesEl = document.querySelector(dom_element)  
+    // console.log(movies.results)
+
     
+    // Loop through object
+    for (let movie of movies.results){
+    // console.log(movie)
+            
+      // Within loop create an img element
+      let imageElement = document.createElement('img')      
+      
+      // Set attribute
+      imageElement.setAttribute('data-id', movie.id)      
+      
+      // Set source - putting the picture in the element
+      imageElement.src = `https://image.tmdb.org/t/p/original${movie[path_type]}`
+            
       // Append the imageElement to the dom_element selected
-  
+      moviesEl.appendChild(imageElement)
+      
     }
+  }  
   
-  
+// testing it out
+// fetchMovies('https://api.themoviedb.org/3/discover/tv?api_key=19f84e11932abbc79e6d83f82d6d1045&with_networks=213', '.original__movies', 'poster_path')
+
   // ** Function that fetches Netflix Originals **
   function getOriginals() {
   
