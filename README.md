@@ -49,3 +49,8 @@ Navigate to Interface folder and start the live server there.
 | 1 | Fighting Game _(buggy)_ | [Click here](https://github.com/raihanrms/BingeJS/tree/main/AdvancedJS/FightingGame) |
 | 2 | Netflix Clone | [Click here](https://github.com/raihanrms/BingeJS/tree/main/AdvancedJS/NetflixClone) |
 
+--
+<h3 align="left">JS Projects</h3>
+
+| No. | Folder | Link |
+|:---:|:---:|:---:|
