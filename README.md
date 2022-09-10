@@ -1,5 +1,5 @@
 # JavaScript Practice
-### Thanks to Clever Programmer [Click](https://www.youtube.com/watch?v=lI1ae4REbFM)
+
 ```Start: 2022/07/03 End: 2022/08/25```
 
 > 12 hours of JavaScript Basics
