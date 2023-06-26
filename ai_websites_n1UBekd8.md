@@ -1,6 +1,6 @@
 # AI ToolBox
 
-This document is prepared by [Pratham Kumar](https://twitter.com/prathkum). Thanks for jumping here!
+This document is prepared by [Raihan Munim](https://twitter.com/prathkum). Thanks for jumping here!
 
 # 50+ AI Websites
 
