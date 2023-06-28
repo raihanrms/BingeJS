@@ -53,4 +53,4 @@ Navigate to Interface folder and start the live server there.
 <h3 align="left">JS Projects</h3>
 | No. | Folder | Link |
 |:---:|:---:|:---:|
-| 1 | Apps Scripts | [Navigate](https://github.dev/raihanrms/BingeJS/tree/main/GSappScript) |
+| 1 | Apps Scripts | [Navigate](https://github.com/raihanrms/BingeJS/tree/main/GSappScript) |
