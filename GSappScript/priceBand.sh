@@ -1,4 +1,5 @@
-=IF(
+# =IF(
+IF(
   IF(
     RIGHT(H2:H, 1) = "g",
     VALUE(LEFT(H2:H, LEN(H2:H) - 1)),
